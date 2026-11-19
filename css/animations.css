@@ -1,0 +1,4 @@
+/* Kelas pendukung animasi Anime.js. Animasi utama berada di js/animations.js. */
+.reveal{opacity:0;transform:translateY(24px)}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+.project-card{transform-origin:center}

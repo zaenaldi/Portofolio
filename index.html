@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portofolio Junior Graphic Designer — eksplorasi visual, branding, desain grafis, dan UI/UX."
+    />
+    <meta name="theme-color" content="#080808" />
+    <meta property="og:title" content="Nama Anda — Junior Graphic Designer" />
+    <meta
+      property="og:description"
+      content="Mengubah ide menjadi karya visual yang bermakna."
+    />
+    <title>Portofolio — Zaenaldi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/font/lucide.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="data/projects.js" defer></script>
+    <script src="data/certificates.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/portfolio.js" defer></script>
+    <script src="js/certificates.js" defer></script>
+    <script src="js/animations.js" defer></script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <header class="site-header" id="top">
+      <nav class="navbar container" aria-label="Navigasi utama">
+        <a class="brand" href="#home" aria-label="Kembali ke beranda"
+          ><span class="brand-mark"><img src="assets/images/logo.png" alt="Logo Zenn Desain"></span
+          ><span class="brand-name"
+            >Zen<span class="gold">.</span></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          aria-label="Buka menu navigasi"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link active">Beranda</a>
+          <a href="#about" class="nav-link">Tentang</a>
+          <a href="#skills" class="nav-link">Keahlian</a>
+          <a href="#experience" class="nav-link">Pengalaman</a>
+          <a href="#portfolio" class="nav-link">Portofolio</a>
+          <a href="#certificates" class="nav-link">Sertifikasi</a>
+          <a href="#workflow" class="nav-link">Alur Kerja</a>
+          <a href="#contact" class="nav-link nav-contact"
+            >Kontak <i data-lucide="arrow-up-right"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- home -->
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero-grid container">
+          <div class="hero-copy">
+            <p class="eyebrow hero-eyebrow">
+              <span class="eyebrow-line"></span> HALO, SAYA
+            </p>
+            <h1 class="hero-title">
+              Muhammad <span class="gold">Zaenaldi</span><br />Musthofa<span
+                class="gold"
+                >.</span
+              >
+            </h1>
+            <p class="hero-tagline">Junior Graphic Designer</p>
+            <div class="hero-actions">
+              <a href="#portfolio" class="button button-gold"
+                >Lihat Portofolio <i data-lucide="arrow-up-right"></i
+              ></a>
+              <a href="#contact" class="button button-outline">Hubungi Saya</a>
+            </div>
+            <div class="hero-socials">
+              <a
+                href="https://instagram.com/zen.designnnn"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+                ><i data-lucide="instagram"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/muhammad-zaenaldi-musthofa"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="LinkedIn"
+                ><i data-lucide="linkedin"></i
+              ></a>
+              <a href="mailto:designza13@gmail.com" aria-label="Email"
+                ><i data-lucide="mail"></i
+              ></a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-wrap">
+              <img src="assets/images/profile/foto profil.jpeg" />
+              <div class="image-frame"></div>
+              <div class="image-caption">
+                <span>01 / CREATIVE MIND</span><span>EST. 2026</span>
+              </div>
+            </div>
+            <div class="hero-side-note">
+              GRAPHIC DESIGN · BRANDING · DIGITAL DESIGN
+            </div>
+          </div>
+        </div>
+        <a href="#about" class="scroll-cue"
+          ><span></span> GULIR UNTUK MENJELAJAH</a
+        >
+      </section>
+
+      <!-- Tentang saya -->
+      <section class="section about-section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span> 01 — PROFIL & PENDIDIKAN
+            </p>
+            <h2>Tentang <span class="gold">Saya</span></h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-intro reveal">
+              <p class="large-copy">Fresh graduate S1 Teknik Informatika.</p>
+              <p class="muted">
+                Saya adalah Lulusan S1 Teknik Informatika Universitas Sains
+                Al-Qur’an dengan pengalaman merancang desain media cetak,
+                identitas visual, dan konten media sosial melalui praktik kerja
+                lapangan, kepanitiaan, dan organisasi kampus. Terbiasa mengikuti
+                proses desain terstruktur, mulai dari riset kebutuhan hingga
+                revisi berdasarkan masukan klien. Antusias, cepat belajar, dan
+                siap berkontribusi penuh sebagai entry-level Graphic Designer.
+              </p>
+              <!-- <p class="muted">
+                Melalui proyek latihan, pengalaman praktik, dan pembelajaran
+                mandiri, saya terus mengembangkan kemampuan serta membangun
+                proses kerja yang lebih terarah.
+              </p> -->
+              <a href="#experience" class="text-link"
+                >Lihat perjalanan saya <i data-lucide="arrow-up-right"></i
+              ></a>
+            </div>
+            <div class="about-edu reveal">
+              <h3 class="about-edu-title">
+                Riwayat <span class="gold">Pendidikan</span>
+              </h3>
+              <div class="timeline">
+                <article class="timeline-item">
+                  <span class="timeline-date">[2022] — [2026]</span>
+                  <div>
+                    <h4>Universitas Sains Al-Qur’an</h4>
+                    <p class="gold-text">
+                      Teknik Informatika / Fakultas Teknik Dan Ilmu Komputer
+                    </p>
+                    <p class="muted">
+                      Penghargaan lulus rekognisi skripsi dengan publikasi
+                      jurnal ilmiah SINTA 3 serta menerima sertifikat
+                      penghargaan prestasi publikasi artikel ilmiah pada jurnal
+                      terakreditasi SINTA.
+                    </p>
+                  </div>
+                </article>
+                <article class="timeline-item">
+                  <span class="timeline-date">[2019] — [2022]</span>
+                  <div>
+                    <h4>SMK MA’ARIF NU BOBOTSARI</h4>
+                    <p class="gold-text">Jurusan Multimedia</p>
+                    <p class="muted"></p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills -->
+      <section class="section skills-section" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span> 02 — KEMAMPUAN
+            </p>
+            <h2>Keahlian & <span class="gold">Eksplorasi</span></h2>
+            <p class="section-desc">
+              Perangkat dan kemampuan yang saya gunakan untuk mengembangkan ide
+              menjadi karya visual.
+            </p>
+          </div>
+          <div class="skills-layout">
+            <div class="software-panel reveal">
+              <div class="panel-top">
+                <span class="eyebrow">SOFTWARE SKILLS</span
+                ><span class="panel-index">A / 04</span>
+              </div>
+              <div class="software-list">
+                <div class="software-item primary-skill">
+                  <div class="software-icon"><img src="assets/images/software/coreldraw.png" alt="Logo CorelDRAW" loading="lazy"></div>
+                  <div class="software-info">
+                    <h3>CorelDRAW</h3>
+                  </div>
+                  <div
+                    class="skill-meter"
+                    role="img"
+                    aria-label="Level 4 dari 5"
+                  >
+                    <i class="sq on"></i><i class="sq on"></i
+                    ><i class="sq on"></i><i class="sq on"></i
+                    ><i class="sq"></i>
+                  </div>
+                </div>
+                <div class="software-item">
+                  <div class="software-icon"><img src="assets/images/software/affinity.png" alt="Logo Affinity" loading="lazy"></div>
+                  <div class="software-info">
+                    <h3>Affinity</h3>
+                  </div>
+                  <div
+                    class="skill-meter"
+                    role="img"
+                    aria-label="Level 3 dari 5"
+                  >
+                    <i class="sq on"></i><i class="sq on"></i
+                    ><i class="sq on"></i><i class="sq"></i><i class="sq"></i>
+                  </div>
+                </div>
+                <div class="software-item">
+                  <div class="software-icon"><img src="assets/images/software/canva.png" alt="Logo Canva" loading="lazy"></div>
+                  <div class="software-info">
+                    <h3>Canva</h3>
+                  </div>
+                  <div
+                    class="skill-meter"
+                    role="img"
+                    aria-label="Level 2 dari 5"
+                  >
+                    <i class="sq on"></i><i class="sq on"></i><i class="sq"></i
+                    ><i class="sq"></i><i class="sq"></i>
+                  </div>
+                </div>
+                <div class="software-item">
+                  <div class="software-icon"><img src="assets/images/software/figma.png" alt="Logo Figma" loading="lazy"></div>
+                  <div class="software-info">
+                    <h3>Figma</h3>
+                  </div>
+                  <div
+                    class="skill-meter"
+                    role="img"
+                    aria-label="Level 2 dari 5"
+                  >
+                    <i class="sq on"></i><i class="sq on"></i><i class="sq"></i
+                    ><i class="sq"></i><i class="sq"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="soft-panel reveal">
+              <div class="panel-top">
+                <span class="eyebrow">SOFT SKILLS</span
+                ><span class="panel-index">B / 07</span>
+              </div>
+              <div class="soft-grid">
+                <div class="soft-item">
+                  <i data-lucide="lightbulb"></i><span>Kreativitas</span>
+                </div>
+                <div class="soft-item">
+                  <i data-lucide="messages-square"></i><span>Komunikasi</span>
+                </div>
+                <div class="soft-item">
+                  <i data-lucide="puzzle"></i><span>Problem Solving</span>
+                </div>
+                <div class="soft-item">
+                  <i data-lucide="clock-3"></i><span>Manajemen Waktu</span>
+                </div>
+                <div class="soft-item">
+                  <i data-lucide="scan-eye"></i><span>Ketelitian</span>
+                </div>
+                <div class="soft-item">
+                  <i data-lucide="refresh-cw"></i><span>Adaptabilitas</span>
+                </div>
+                <div class="soft-item">
+                  <i data-lucide="users"></i><span>Kerja Sama Tim</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pengalaman -->
+      <section class="section experience-section" id="experience">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span> 03 — PENGALAMAN
+            </p>
+            <h2>Pengalaman <span class="gold"></span></h2>
+          </div>
+          <!-- pengalaman 1 -->
+          <article class="experience-card reveal">
+            <div class="experience-meta">
+              <span class="experience-tag">PKL  (Praktik Kerja Lapangan SMK) </span
+              ><span>[januari 2021 — Maret 2021]</span>
+            </div>
+            <div class="experience-main">
+              <div>
+                <h3>Azka Digital Priting<h3>
+                <p class="gold-text">Desain grafis & Finising</p>
+                <p class="muted">Randudungkal</p>
+              </div>
+              <div class="experience-description">
+                <p class="muted">
+                  PKL Sebagai slah satu program SMK dimana para siswa 
+                  agar mengenal dunia kerja secara langsung yang bertujuan 
+                  agar nantinya ketika lulus siap langsung terjun ke dunia kerja
+                </p>
+                <ul>
+                  <li>Mendesain material promosi cetak seperti banner, stiker, brosur, dan kartu nama sesuai kebutuhan klien. </li>
+                  <li>Berkomunikasi langsung dengan klien untuk menyesuaikan revisi desain hingga siap cetak (print-ready).</li>
+                  <li>Melakukan proses finishing produk cetak, termasuk pengeleman banner dan laminasi stiker </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+<!-- pengalaman 2 -->
+          <article class="experience-card reveal">
+            <div class="experience-meta">
+              <span class="experience-tag">KP (Kerja Praktek) </span
+              ><span>[Mei 2025 — Agustus 2025]</span>
+            </div>
+            <div class="experience-main">
+              <div>
+                <h3>SDN 03 Kuta, Belik, Pemalang<h3>
+                <p class="gold-text">Web Developer Intern</p>
+                <p class="muted">Kuta, Belik, Pemalang</p>
+              </div>
+              <div class="experience-description">
+                <p class="muted">
+                  KP adalah program magang mandiri untuk mahasiswa teknik informatika mengembakan keahlian di dunia kerja.
+                </p>
+                <ul>
+                  <li>Merancang kebutuhan sistem </li>
+                  <li>Merancang antarmuka (UI/UX) sistem informasi manajemen perpustakaan.</li>
+                  <li>Membuat website sesuai rancangan yang telah di buat</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          <!-- Pengalam 3 -->
+           <article class="experience-card reveal">
+            <div class="experience-meta">
+              <span class="experience-tag"> PROYEK AKADEMIK </span
+              ><span>[Proyek Tugas Kuliah 2024]</span>
+            </div>
+            <div class="experience-main">
+              <div>
+                <h3>UI/UX Website E-Commerce<h3>
+                <p class="gold-text">UI/UX Design</p>
+                <p class="muted"></p>
+              </div>
+              <div class="experience-description">
+                <p class="muted">
+                  Perancangan UI/UX Website E-Commerce Altura Outdor Geer tugas mata kuliah interaksi manusia dan komputer
+                </p>
+                <ul>
+                  <li>Merancang dan membuat wireframe di kertas kemudian di aplikasikan dengan figma untuk menyusun tata 
+                      letak dan alur navigasi setiap halaman (beranda, katalog produk, detail produk, keranjang belanja). </li>
+                  <li>Mengembangkan UI dan prototype interaktif di Figma yang dapat disimulasikan selayaknya website nyata.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+<!-- Portofolio -->
+      <section class="section portfolio-section" id="portfolio">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span> 04 — KARYA TERPILIH
+            </p>
+            <h2>Portofolio <span class="gold"></span></h2>
+            <p class="section-desc">
+              Kumpulan eksplorasi dan karya visual yang merepresentasikan proses
+              serta perkembangan saya dalam dunia desain.
+            </p>
+          </div>
+          <div class="portfolio-toolbar reveal">
+            <div
+              class="filter-list"
+              id="portfolioFilters"
+              aria-label="Filter kategori portofolio"
+            >
+              <button class="filter-btn active" data-filter="all">
+                Semua Karya
+              </button>
+              <button class="filter-btn" data-filter="banner">Banner</button>
+              <button class="filter-btn" data-filter="poster">Poster</button>
+              <button class="filter-btn" data-filter="logo">
+                Logo & Branding
+              </button>
+              <button class="filter-btn" data-filter="social-media">
+                Media Sosial
+              </button>
+              <button class="filter-btn" data-filter="packaging">
+                Kemasan
+              </button>
+              <button class="filter-btn" data-filter="uiux">UI/UX</button>
+              <button class="filter-btn" data-filter="others">Lainnya</button>
+            </div>
+            <span class="project-count" id="projectCount">00 KARYA</span>
+          </div>
+          <div
+            class="portfolio-grid"
+            id="portfolioGrid"
+            aria-live="polite"
+          ></div>
+        </div>
+      </section>
+
+      <section class="section certificates-section" id="certificates">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span> 05 — PENGEMBANGAN DIRI
+            </p>
+            <h2>Sertifikasi Pelatihan & <span class="gold">Prestasi</span></h2>
+            <p class="section-desc">
+              Dokumentasi pembelajaran, pelatihan, Prestasi atau penghargaan akdemik dan pengalaman pengembangan
+              keterampilan.
+            </p>
+          </div>
+          <div class="certificate-grid" id="certificateGrid"></div>
+        </div>
+      </section>
+
+      <section class="section workflow-section" id="workflow">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-line"></span> 06 — PROSES KREATIF
+            </p>
+            <h2>Alur Kerja <span class="gold">Desain</span></h2>
+            <p class="section-desc">
+              Proses terarah membantu saya menjaga tujuan, konsistensi, dan
+              kualitas hasil desain.
+            </p>
+          </div>
+          <div class="workflow-track">
+            <div class="workflow-line">
+              <span class="workflow-line-fill"></span>
+            </div>
+            <article class="workflow-step reveal">
+              <span class="workflow-number">01</span>
+              <div class="workflow-icon">
+                <i data-lucide="clipboard-list"></i>
+              </div>
+              <h3>Memahami Brief</h3>
+              <p>
+                Mempelajari kebutuhan, tujuan, target audiens, dan arahan
+                proyek.
+              </p>
+            </article>
+            <article class="workflow-step reveal">
+              <span class="workflow-number">02</span>
+              <div class="workflow-icon"><i data-lucide="search"></i></div>
+              <h3>Riset & Referensi</h3>
+              <p>
+                Mencari inspirasi dan referensi untuk menentukan arah visual
+                yang sesuai.
+              </p>
+            </article>
+            <article class="workflow-step reveal">
+              <span class="workflow-number">03</span>
+              <div class="workflow-icon"><i data-lucide="pen-tool"></i></div>
+              <h3>Pembuatan Desain</h3>
+              <p>
+                Mengembangkan ide menjadi komposisi visual dengan elemen yang
+                tepat.
+              </p>
+            </article>
+            <article class="workflow-step reveal">
+              <span class="workflow-number">04</span>
+              <div class="workflow-icon">
+                <i data-lucide="gallery-vertical-end"></i>
+              </div>
+              <h3>Hasil Desain</h3>
+              <p>Menyajikan hasil berdasarkan konsep dan kebutuhan proyek.</p>
+            </article>
+            <article class="workflow-step reveal">
+              <span class="workflow-number">05</span>
+              <div class="workflow-icon"><i data-lucide="refresh-ccw"></i></div>
+              <h3>Revisi</h3>
+              <p>Mengevaluasi masukan dan menyempurnakan hasil akhir desain.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-copy reveal">
+              <p class="eyebrow">
+                <span class="eyebrow-line"></span> 07 — MULAI KOLABORASI
+              </p>
+              <h2>
+                Let's Work <span class="gold">Together.</span>
+              </h2>
+              <p class="muted">
+                Terbuka untuk kesempatan kerja, kolaborasi, maupun proyek
+                kreatif. Silakan hubungi saya melalui kontak berikut.
+              </p>
+              <a class="contact-email" href="mailto:designza13@gmail.com"
+                >designza13@gmail.com<i data-lucide="arrow-up-right"></i
+              ></a>
+              <div class="contact-socials">
+                <a
+                  href="https://instagram.com/zen.designnnn"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Instagram <i data-lucide="arrow-up-right"></i></a
+                ><a
+                  href="https://linkedin.com/in/muhammad-zaenaldi-musthofa"
+                  target="_blank"
+                  rel="noreferrer"
+                  >LinkedIn <i data-lucide="arrow-up-right"></i
+                ></a>
+              </div>
+            </div>
+            <form class="contact-form reveal" id="contactForm">
+              <label for="contactName">Nama Lengkap</label
+              ><input
+                id="contactName"
+                name="name"
+                type="text"
+                placeholder="Masukkan nama Anda"
+                required
+              />
+              <label for="contactEmail">Alamat Email</label
+              ><input
+                id="contactEmail"
+                name="email"
+                type="email"
+                placeholder="nama@email.com"
+                required
+              />
+              <label for="contactSubject">Subjek</label
+              ><input
+                id="contactSubject"
+                name="subject"
+                type="text"
+                placeholder="Tujuan menghubungi"
+                required
+              />
+              <label for="contactMessage">Pesan</label
+              ><textarea
+                id="contactMessage"
+                name="message"
+                rows="4"
+                placeholder="Tuliskan pesan Anda..."
+                required
+              ></textarea>
+              <button class="button button-gold form-submit" type="submit">
+                Kirim melalui Email <i data-lucide="arrow-up-right"></i>
+              </button>
+              <p class="form-hint" id="formStatus">
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#home"
+          ><span class="brand-mark"><img src="assets/images/logo.png" alt="Logo Zenn Desain"></span
+          ><span class="brand-name">Zen<span class="gold">.</span></span></a
+        >
+        <p>Merancang dengan tujuan. Berkarya dengan makna.</p>
+        <span
+          >© <span id="currentYear"></span></span
+        >
+      </div>
+    </footer>
+
+    <div
+      class="project-modal"
+      id="projectModal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel">
+        <button
+          class="modal-close"
+          aria-label="Tutup detail proyek"
+          data-close-modal
+        >
+          <i data-lucide="x"></i>
+        </button>
+        <div class="modal-content" id="modalContent"></div>
+        <div class="modal-navigation">
+          <button id="prevProject" type="button">
+            <i data-lucide="arrow-left"></i> Sebelumnya</button
+          ><button id="nextProject" type="button">
+            Berikutnya <i data-lucide="arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="image-modal"
+      id="imageModal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-backdrop" data-close-image></div>
+      <button
+        class="modal-close"
+        data-close-image
+        aria-label="Tutup sertifikat"
+      >
+        <i data-lucide="x"></i></button
+      ><img id="certificatePreview" src="" alt="Pratinjau sertifikat" />
+    </div>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide) window.lucide.createIcons();
+      });
+    </script>
+  </body>
+</html>
