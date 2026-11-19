@@ -64,6 +64,9 @@ img {
   padding: 112px 0;
   position: relative;
 }
+.section + .section {
+  border-top: 1px solid var(--line);
+}
 .eyebrow {
   font-size: 0.68rem;
   letter-spacing: 0.18em;
@@ -352,98 +355,8 @@ img {
   height: 1px;
   background: var(--gold);
 }
-.about-section {
-  background: var(--warm);
-  color: var(--black);
-}
-.about-section .eyebrow {
-  color: #94743b;
-}
-.about-section .eyebrow-line {
-  background: #94743b;
-}
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
-}
-.large-copy {
-  font-size: clamp(1.55rem, 3vw, 2.45rem);
-  line-height: 1.35;
-  font-weight: 600;
-  letter-spacing: -0.04em;
-  margin-bottom: 25px;
-}
-.about-intro .muted {
-  color: #646464;
-  margin-bottom: 14px;
-  max-width: 650px;
-}
-.text-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  margin-top: 22px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  border-bottom: 1px solid #a8874e;
-  padding-bottom: 7px;
-}
-.text-link svg {
-  width: 15px;
-}
-.about-edu-title {
-  font-size: 1.25rem;
-  letter-spacing: -0.02em;
-  margin-bottom: 26px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-.about-edu .gold,
-.about-edu .gold-text {
-  color: #94743b;
-}
-.timeline {
-  border-left: 1px solid rgba(148, 116, 59, 0.6);
-  margin-left: 4px;
-}
-.timeline-item {
-  padding: 0 0 38px 30px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.timeline-item:last-child {
-  padding-bottom: 0;
-}
-.timeline-item:before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: 5px;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: #94743b;
-  box-shadow: 0 0 0 6px rgba(148, 116, 59, 0.14);
-}
-.timeline-date {
-  font-size: 0.68rem;
-  color: #94743b;
-  letter-spacing: 0.08em;
-  font-weight: 700;
-}
-.timeline-item h4 {
-  font-size: 1.05rem;
-}
-.timeline-item .muted {
-  margin-top: 6px;
-  color: #646464;
-}
 .skills-section {
-  background: #080808;
+  background: var(--black);
 }
 .skills-layout {
   display: grid;
@@ -554,55 +467,9 @@ img {
 .soft-item span {
   font-size: 0.72rem;
 }
-.experience-section {
-  background: #111;
-}
-.experience-card {
-  border: 1px solid var(--line);
-  padding: 35px;
-}
-.experience-meta {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  color: var(--muted);
-  font-size: 0.64rem;
-  letter-spacing: 0.1em;
-}
-.experience-tag {
-  color: var(--gold);
-  font-weight: 800;
-}
-.experience-main {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 70px;
-  margin-top: 35px;
-}
-.experience-main h3 {
-  font-size: 1.6rem;
-  letter-spacing: -0.04em;
-}
-.experience-description ul {
-  margin: 18px 0 0 18px;
-  color: var(--gray);
-  font-size: 0.82rem;
-}
-.experience-description li {
-  padding: 4px 0;
-}
 .portfolio-section {
-  background: var(--warm);
-  color: var(--black);
-}
-.portfolio-section .eyebrow {
-  color: #94743b;
-}
-.portfolio-section .eyebrow-line {
-  background: #94743b;
-}
-.portfolio-section .section-desc {
-  color: #686868;
+  background: var(--black);
+  color: var(--white);
 }
 .portfolio-toolbar {
   display: flex;
@@ -617,23 +484,26 @@ img {
   gap: 8px;
 }
 .filter-btn {
-  border: 1px solid rgba(0, 0, 0, 0.17);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background: transparent;
   padding: 9px 13px;
   font-size: 0.65rem;
-  color: #555;
+  color: #c6c6c6;
   transition: all 0.25s;
 }
-.filter-btn:hover,
-.filter-btn.active {
-  background: var(--black);
-  border-color: var(--black);
+.filter-btn:hover {
+  border-color: var(--gold);
   color: var(--gold);
+}
+.filter-btn.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--black);
 }
 .project-count {
   font-size: 0.6rem;
   letter-spacing: 0.12em;
-  color: #777;
+  color: #8a8a8a;
   white-space: nowrap;
   padding-top: 10px;
 }
@@ -648,12 +518,13 @@ img {
   min-width: 0;
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background: var(--charcoal);
+  border: 1px solid var(--line);
   overflow: hidden;
-  box-shadow:
-    0 6px 18px rgba(0, 0, 0, 0.08),
-    0 2px 4px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.35s ease;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
+  transition:
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
 }
 .project-image-wrap {
   aspect-ratio: 4/5;
@@ -670,9 +541,10 @@ img {
 }
 .project-card:hover,
 .project-card:focus-visible {
+  border-color: rgba(214, 180, 106, 0.55);
   box-shadow:
-    0 22px 44px rgba(0, 0, 0, 0.2),
-    0 6px 12px rgba(0, 0, 0, 0.08);
+    0 22px 44px rgba(0, 0, 0, 0.7),
+    0 0 0 1px rgba(214, 180, 106, 0.25);
 }
 .project-overlay {
   position: absolute;
@@ -724,22 +596,22 @@ img {
 }
 .project-info span {
   font-size: 0.62rem;
-  color: #777;
+  color: #999;
 }
 .project-category {
   font-size: 0.6rem;
-  color: #8a6c35;
+  color: var(--gold);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 0 18px 18px;
 }
 .portfolio-note {
   font-size: 0.68rem;
-  color: #777;
+  color: #8a8a8a;
   margin-top: 28px;
 }
 .certificates-section {
-  background: #101010;
+  background: var(--black);
 }
 .certificate-grid {
   display: grid;
@@ -784,17 +656,8 @@ img {
   margin-top: 5px;
 }
 .workflow-section {
-  background: #f5f3ef;
-  color: var(--black);
-}
-.workflow-section .eyebrow {
-  color: #94743b;
-}
-.workflow-section .eyebrow-line {
-  background: #94743b;
-}
-.workflow-section .section-desc {
-  color: #686868;
+  background: var(--black);
+  color: var(--white);
 }
 .workflow-track {
   display: grid;
@@ -809,13 +672,13 @@ img {
   left: 5%;
   right: 5%;
   height: 1px;
-  background: rgba(0, 0, 0, 0.17);
+  background: rgba(255, 255, 255, 0.17);
 }
 .workflow-line-fill {
   display: block;
   height: 100%;
   width: 0;
-  background: #b18a45;
+  background: var(--gold);
 }
 .workflow-step {
   position: relative;
@@ -826,13 +689,14 @@ img {
   top: 0;
   left: 0;
   font-size: 0.65rem;
-  color: #a17d3e;
+  color: var(--gold);
   font-weight: 800;
 }
 .workflow-icon {
   width: 50px;
   height: 50px;
-  background: var(--black);
+  background: var(--charcoal);
+  border: 1px solid var(--line);
   color: var(--gold);
   display: grid;
   place-items: center;
@@ -849,11 +713,11 @@ img {
 }
 .workflow-step p {
   font-size: 0.73rem;
-  color: #686868;
+  color: var(--gray);
   line-height: 1.8;
 }
 .contact-section {
-  background: #0b0b0b;
+  background: var(--black);
 }
 .contact-grid {
   display: grid;
@@ -942,7 +806,7 @@ img {
   margin-top: 12px;
 }
 .site-footer {
-  background: #050505;
+  background: var(--black);
   border-top: 1px solid var(--line);
   padding: 27px 0;
 }
@@ -1092,8 +956,8 @@ img {
   grid-column: 1/-1;
   text-align: center;
   padding: 65px 20px;
-  border: 1px dashed rgba(0, 0, 0, 0.25);
-  color: #777;
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+  color: #999;
   font-size: 0.85rem;
 }
 @media (prefers-reduced-motion: reduce) {

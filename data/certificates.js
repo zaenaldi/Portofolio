@@ -30,12 +30,4 @@ window.PORTFOLIO_CERTIFICATES = [
     image:
       "assets/images/certificates/E-Sertifikat SC Design System in UI Design MySkill Desember.png",
   },
-  {
-    id: 3,
-    title: "Penghargaan Publikasi Jurnal Ilmiah",
-    issuer: "Fakultas Teknik dan Ilmu Komputer Universitas Sains Al-Qur'an",
-    date: "2026",
-    category: "Prestasi Individu",
-    image: "assets/images/certificates/sertifikat penghargaan.jpeg",
-  },
 ];
