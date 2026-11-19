@@ -7,23 +7,6 @@
 */
 window.PORTFOLIO_PROJECTS = [
   {
-    id: 1,
-    title: "Brosur",
-    category: "others",
-    categoryLabel: "Desain Lainnya",
-    year: "2020",
-    thumbnail: "assets/images/portofolio/Desain Lainya/brosur ziarah.jpg",
-    description:
-      "Desain brosur informasi salah satu tugas pada saat PKL SMK di Azkadigital printing.",
-    objective:
-      "Menyajikan informasi terkait kegiatan ziarah dari tujuan hingga biaya.",
-    concept: "Pembagian panel dengan hierarki informasi yang jelas.",
-    process:
-      "Menyusun konten, menentukan layout lipatan, dan finalisasi cetak.",
-    software: ["CorelDRAW"],
-    gallery: ["assets/images/portofolio/Desain Lainya/brosur ziarah.jpg"],
-  },
-  {
     id: 2,
     title: "Brosur",
     category: "others",
